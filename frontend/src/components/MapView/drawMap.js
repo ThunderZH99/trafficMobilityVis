@@ -61,11 +61,12 @@ DrawMap.prototype.init = function () {
         zIndex: 300
     });
 
+    this.customLayer.setMap(this.map);
+
 }
 
 DrawMap.prototype.drawTest = function() {
     let svgContainer = d3.select(this.svgCanvas);
-    console.log("this.svgCanvas",this.svgCanvas);
 
     const g = svgContainer.append("g")
         .attr("class","test_chart");
