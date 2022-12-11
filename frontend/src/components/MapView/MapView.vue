@@ -30,37 +30,12 @@
         height: 350px;
     }
 
-
-    .gpsPoint {
-        fill: #fec44f;
+    #drawing {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
-    .stationPoint {
-        fill: #2171b5;
-    }
-
-    .stationHighlight {
-        fill: #ef3b2c;
-    }
-
-    .gpsHighlight {
-        stroke: #ef3b2c;
-    }
-
-    .tripStartPoint {
-        fill: #41ae76;
-    }
-
-    .tripEndPoint {
-        fill: #9e9ac8;
-    }
-
-    .timestampGpsHighlight {
-        stroke: #ef3b2c;
-    }
-
-    .timestampStationHighlight {
-        stroke: #ef3b2c;
-    }
 
 </style>

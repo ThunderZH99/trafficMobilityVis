@@ -1,24 +1,24 @@
 // /* global d3 $ */
 // import dataService from '../../service/dataService.js'
 // import pipeService from '../../service/pipeService.js'
-import DrawRelation from './drawRelation.js'
+import ToolBox from './ToolBox.js'
 // import pipeService from '../../service/pipeService'
 
 export default {
-    name: 'RelationView',
+    name: 'ControlPanel',
     components: {
     },
     props: {
     },
     data() {
         return {
-            containerId: 'relationContainer'
+            containerId: 'controlPanelContainer'
         }
     },
     watch: {
     },
     mounted: function () {
-        this.drawRelation = new DrawRelation(this.containerId)
+        this.toolBox = new ToolBox(this.containerId)
 
 
     }

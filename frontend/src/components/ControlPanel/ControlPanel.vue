@@ -1,6 +1,6 @@
-<template src='./RelationView.html'></template>
+<template src='./ControlPanel.html'></template>
 
-<script src='./RelationView.js'></script>
+<script src='./ControlPanel.js'></script>
 
 <style>
     .card {
@@ -25,9 +25,9 @@
         white-space: nowrap;
     }
 
-    #relationContainer {
+    #controlPanelContainer {
         /* height: 243px; */
-        height: 350px;
+        height: 750px;
     }
 
 

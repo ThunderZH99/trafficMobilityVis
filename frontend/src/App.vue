@@ -5,29 +5,36 @@
               <span style="color:white; font-size:1.25rem; font-weight:500; user-select: none">Urban Traffic Mobility Analysis</span>
           </div>
       </nav>
+
       <div class="container-fluid" style="padding-left: 5px; padding-right: 5px">
-          <div class="row" style="margin-left: 10px; margin-right: 10px">
-              <div class="col-3 content" style="padding-left: 3px; padding-right: 3px">
-                  <RelationView></RelationView>
-              </div>
-              <div class="col-6 content" style="padding-left: 3px; padding-right: 3px">
-                <MapView></MapView>
-              </div>
-              <div class="col-3 content" style="padding-left: 3px; padding-right: 3px">
-                <SummaryView></SummaryView>
-              </div>
-          </div>
-      </div>
-      <div class="container-fluid" style="padding-left: 5px; padding-right: 5px">
-          <div class="row" style="margin-left: 10px; margin-right: 10px">
-              <div class="col-3 content" style="padding-left: 3px; padding-right: 3px">
-                <FeatureView></FeatureView>
-              </div>
-              <div class="col-9 content" style="padding-left: 3px; padding-right: 3px">
+        <div class="row" style="margin-left: 10px; margin-right: 10px">
+
+          <div class="col-3 content" style="padding-left: 3px; padding-right: 3px">
+              <ControlPanel></ControlPanel>
+          </div>    
+
+          <div class="col-9 content" style="padding-left: 3px; padding-right: 3px">
+            <div class="row" style="margin-left: 10px; margin-right: 10px">
+                <div class="col-8 content" style="padding-left: 3px; padding-right: 3px">
+                  <MapView></MapView>
+                </div>
+                <div class="col-4 content" style="padding-left: 3px; padding-right: 3px">
+                  <SummaryView></SummaryView>
+                </div>
+            </div>
+
+            <div class="row" style="margin-left: 10px; margin-right: 10px">
+              <div class="col-12 content" style="padding-left: 3px; padding-right: 3px">
                 <MobilityView></MobilityView>
               </div>
-          </div>
-      </div>             
+            </div>
+
+          </div>    
+        
+        </div>
+      
+      </div> 
+                
   </div>
 </template>
 
@@ -36,18 +43,16 @@
 /* global d3 */
 
 import MapView from './components/MapView/MapView.vue'
-import FeatureView from './components/FeatureView/FeatureView.vue'
 import MobilityView from './components/MobilityView/MobilityView.vue'
-import RelationView from './components/RelationView/RelationView.vue'
+import ControlPanel from './components/ControlPanel/ControlPanel.vue'
 import SummaryView from "./components/SummaryView/SummaryView.vue";
 
 export default {
   name: 'app',
   components: {
       MapView,
-      FeatureView,
       MobilityView,
-      RelationView,
+      ControlPanel,
       SummaryView
 },
   data() {

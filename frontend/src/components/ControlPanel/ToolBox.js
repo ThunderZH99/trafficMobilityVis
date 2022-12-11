@@ -1,7 +1,7 @@
 /* global d3 $ */
 // import pipeService from '../../service/pipeService.js'
 
-let DrawRelation= function (id) {
+let ToolBox = function (id) {
 	this.id = id
     this.svgWidth = $('#' + id).width()
     this.svgHeight = $('#' + id).height()
@@ -25,8 +25,8 @@ let DrawRelation= function (id) {
     };
 }
 
-DrawRelation.prototype.layout = function () {
+ToolBox.prototype.layout = function () {
     
 }
 
-export default DrawRelation
+export default ToolBox

@@ -25,11 +25,8 @@ export default {
     },
     mounted: function () {
         this.drawMap = new DrawMap(this.containerId)
-
-        dataService.stationInfo((data) => {
-            this.stationData = data['data']
-            this.drawMap.layout(this.stationData)
-        })
+        this.drawMap.init();
+        this.drawMap.drawTest();
 
     }
 }
